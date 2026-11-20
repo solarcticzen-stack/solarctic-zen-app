@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "status": "Entwurf – fachliche Prüfung ausstehend",
+  "tips": [
+    { "id": "general.routine", "goals": [], "evidence": "practice",
+      "de": "Regelmässigkeit vor Rekorden: Mehrere kurze Bäder pro Woche sind sinnvoller als ein einzelnes langes." },
+    { "id": "general.breathing", "goals": [], "evidence": "practice",
+      "de": "Die ersten Minuten sind die Kälteschock-Phase. Konzentriere dich auf eine lange, ruhige Ausatmung." },
+
+    { "id": "recovery.soreness", "goals": ["recovery"], "evidence": "early",
+      "de": "Studien deuten darauf hin, dass kaltes Wasser nach dem Sport Muskelkater leicht verringern kann. Der Effekt ist eher klein." },
+    { "id": "recovery.strength", "goals": ["recovery"], "evidence": "early",
+      "de": "Wenn du Muskeln aufbauen willst: Eisbaden direkt nach dem Krafttraining kann die Anpassung dämpfen. Lass lieber einige Stunden Abstand." },
+
+    { "id": "mental.mood", "goals": ["mental", "stress"], "evidence": "early",
+      "de": "Viele berichten kurz nach dem Bad von besserer Stimmung. Studien zeigen das bisher vor allem in kleinen Gruppen." },
+    { "id": "mental.calm", "goals": ["mental", "stress"], "evidence": "practice",
+      "de": "Nimm dir nach dem Bad zwei Minuten Ruhe, bevor du weitermachst. Wie fühlst du dich gerade?" },
+
+    { "id": "sleep.evidence", "goals": ["sleep"], "evidence": "insufficient",
+      "de": "Ob Eisbaden den Schlaf verbessert, ist noch kaum untersucht. Beobachte deinen eigenen Verlauf mit den Schlaf-Fragen." },
+    { "id": "sleep.timing", "goals": ["sleep"], "evidence": "practice",
+      "de": "Kälte wirkt bei vielen aktivierend. Probiere aus, ob dir ein Bad am Morgen oder am frühen Abend besser bekommt als kurz vor dem Schlafen." },
+
+    { "id": "weight.reality", "goals": ["weightLoss"], "evidence": "insufficient",
+      "de": "Kälte steigert kurzzeitig den Energieverbrauch, bei wenigen Minuten bleibt der Effekt aber klein. Fürs Abnehmen zählen Ernährung und Bewegung deutlich mehr." },
+    { "id": "weight.warmup", "goals": ["weightLoss"], "evidence": "practice",
+      "de": "Nutze das Aufwärmen nach dem Bad aktiv: Bewegung erzeugt Wärme und verbraucht zugleich Energie." },
+
+    { "id": "longevity.evidence", "goals": ["longevity"], "evidence": "insufficient",
+      "de": "Dass regelmässiges Eisbaden das Leben verlängert, ist wissenschaftlich nicht belegt. Eine Routine, die dir guttut, ist trotzdem wertvoll." },
+
+    { "id": "prevention.sickdays", "goals": ["prevention"], "evidence": "early",
+      "de": "In einer Studie meldeten sich Menschen mit kalten Duschen etwas seltener krank – die Zahl der Krankheitstage änderte sich aber nicht. Ein Schutz vor Krankheiten ist nicht belegt." },
+
+    { "id": "discipline.overcome", "goals": ["discipline"], "evidence": "practice",
+      "de": "Der Einstieg ist oft das Schwierigste. Deine Bewertung «Überwindung» zeigt dir mit der Zeit, wie er leichter wird." },
+
+    { "id": "medical.doctor", "goals": ["medical"], "evidence": "practice",
+      "de": "Du badest aus gesundheitlichen Gründen. Bitte besprich Temperatur und Dauer mit deiner Ärztin oder deinem Arzt – die App ersetzt keine medizinische Beratung." }
+  ]
+}

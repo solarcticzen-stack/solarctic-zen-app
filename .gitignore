@@ -1,0 +1,20 @@
+# Betriebssystem / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Geheimnisse – niemals einchecken
+*.p8
+*.p12
+*.mobileprovision
+*.jks
+*.keystore
+key.properties
+.env
+.env.*
+**/GoogleService-Info.plist
+**/google-services.json
+
+# Grosse Marken-/Hardware-Rohdateien bei Bedarf hier ausschliessen

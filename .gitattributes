@@ -1,0 +1,8 @@
+# Einheitliche Zeilenenden im Repository (Entwicklung auf Windows, Builds auf Linux/macOS).
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.png binary
+*.jpg binary
+*.ttf binary
+*.otf binary

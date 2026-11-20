@@ -1,0 +1,17 @@
+{
+  "articles": [
+    "sicher-ins-eisbad.md",
+    "die-ersten-60-sekunden.md",
+    "was-passiert-im-koerper.md"
+  ],
+  "planned": [
+    { "title": "Anpassung: Was regelmässige Kälte verändert – und was nicht", "hint": "nach 10 Eisbädern" },
+    { "title": "Herz und Kreislauf im kalten Wasser", "hint": "mit der Herzfrequenz-Messung" },
+    { "title": "Nervensystem, Stresshormone und Stimmung", "hint": "nach 3 Wochen in Folge" },
+    { "title": "Nachwärmen und Afterdrop", "hint": "in Vorbereitung" },
+    { "title": "Eisbad und Sport: Timing ist entscheidend", "hint": "nach 25 Eisbädern" },
+    { "title": "Was die Forschung (noch) nicht weiss", "hint": "nach 50 Eisbädern" },
+    { "title": "Die eigene Routine aufbauen", "hint": "in Vorbereitung" },
+    { "title": "Wer sollte nicht oder nur nach ärztlicher Rücksprache eisbaden?", "hint": "in Vorbereitung" }
+  ]
+}

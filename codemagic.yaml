@@ -1,0 +1,118 @@
+# Solarctic-Zen – Builds in der Cloud (ADR-015, ADR-030).
+#
+# STATUS: Vorlage, noch NICHT ausgeführt. Ablauf und Einrichtung:
+# docs/DEVICE_TESTING.md.
+#
+# Testversionen für die Geräte entstehen NICHT bei jedem Push, sondern nur,
+# wenn ein Tag «beta-…» gesetzt wird (z. B. beta-2026-11-21). So kann der Code
+# laufend auf GitHub gesichert werden, ohne jedes Mal ein Update auszuliefern.
+#
+# Voraussetzungen in Codemagic (Team settings bzw. App settings):
+#   iOS:     App-Store-Connect-Integration «Solarctic-Zen ASC» (API-Schlüssel .p8),
+#            Bundle-ID ch.solarcticzen.app in App Store Connect registriert.
+#   Android: Upload-Schlüssel unter «Code signing identities → Android keystores»
+#            mit dem Referenznamen «solarctic-zen-upload»; Umgebungsgruppe
+#            «google_play» mit GCLOUD_SERVICE_ACCOUNT_CREDENTIALS (Dienstkonto
+#            der Google Play Console). Die allererste Version muss einmal von
+#            Hand in der Play Console hochgeladen werden (Vorgabe von Google).
+
+definitions:
+  flutter_env: &flutter_env
+    flutter: "3.50.0"
+  beta_trigger: &beta_trigger
+    events: [tag]
+    tag_patterns:
+      - pattern: "beta-*"
+  common_scripts:
+    - &analytics_off
+      name: Analytics aus
+      script: flutter --disable-analytics
+    - &pub_get
+      name: Pakete
+      script: flutter pub get
+    - &tests
+      name: Analyse & Tests
+      script: |
+        flutter analyze
+        flutter test
+
+workflows:
+  ios-tests:
+    name: iOS – Tests & Build ohne Signierung
+    max_build_duration: 45
+    instance_type: mac_mini_m2
+    working_directory: app
+    environment:
+      <<: *flutter_env
+      xcode: latest
+    triggering:
+      events: [pull_request]
+    scripts:
+      - *analytics_off
+      - *pub_get
+      - *tests
+      - name: iOS-Build (ohne Signierung)
+        script: flutter build ios --debug --no-codesign
+
+  ios-testflight:
+    name: iOS – TestFlight
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    working_directory: app
+    integrations:
+      app_store_connect: Solarctic-Zen ASC
+    environment:
+      <<: *flutter_env
+      xcode: latest
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: ch.solarcticzen.app
+    triggering: *beta_trigger
+    scripts:
+      - *analytics_off
+      - *pub_get
+      - *tests
+      - name: Signierprofile anwenden
+        script: xcode-project use-profiles
+      - name: IPA bauen
+        script: |
+          flutter build ipa --release \
+            --build-number=$BUILD_NUMBER \
+            --export-options-plist=/Users/builder/export_options.plist
+    artifacts:
+      - build/ios/ipa/*.ipa
+    publishing:
+      app_store_connect:
+        auth: integration
+        # Interne Tester (App-Store-Connect-Team) bekommen jede Version ohne
+        # Prüfung durch Apple.
+        submit_to_testflight: true
+
+  android-internal:
+    name: Android – Google Play (interner Test)
+    max_build_duration: 45
+    instance_type: linux_x2
+    working_directory: app
+    environment:
+      <<: *flutter_env
+      java: 21
+      android_signing:
+        - solarctic-zen-upload
+      groups:
+        - google_play
+    triggering: *beta_trigger
+    scripts:
+      - *analytics_off
+      - *pub_get
+      - *tests
+      - name: App Bundle bauen
+        script: |
+          LATEST=$(google-play get-latest-build-number \
+            --package-name "ch.solarcticzen.app" --tracks internal 2>/dev/null || echo 0)
+          flutter build appbundle --release --build-number=$((LATEST + 1))
+    artifacts:
+      - build/app/outputs/bundle/release/*.aab
+    publishing:
+      google_play:
+        credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
+        track: internal

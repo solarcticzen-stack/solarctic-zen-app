@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "milestones": [
+    { "id": "count.1", "category": "count", "rule": { "type": "session_count", "min": 1 }, "article_unlock": "first-60-seconds",
+      "i18n": {
+        "de": { "title": "Erstes Eisbad", "description": "Du hast dein erstes Eisbad dokumentiert.", "message": "Der erste Schritt ist oft der schwerste. Willkommen." },
+        "en": { "title": "First ice bath", "description": "You logged your first ice bath.", "message": "The first step is often the hardest. Welcome." } } },
+    { "id": "count.5", "category": "count", "rule": { "type": "session_count", "min": 5 }, "article_unlock": "body-and-cold",
+      "i18n": {
+        "de": { "title": "5 Eisbäder", "description": "Fünf Eisbäder dokumentiert.", "message": "Du lernst deinen Körper in der Kälte kennen." },
+        "en": { "title": "5 ice baths", "description": "Five ice baths logged.", "message": "You are getting to know your body in the cold." } } },
+    { "id": "count.10", "category": "count", "rule": { "type": "session_count", "min": 10 }, "article_unlock": "adaptation-basics",
+      "i18n": {
+        "de": { "title": "10 Eisbäder", "description": "Zehn Eisbäder dokumentiert.", "message": "Zehn bewusste Entscheidungen – eine Routine entsteht." },
+        "en": { "title": "10 ice baths", "description": "Ten ice baths logged.", "message": "Ten conscious decisions – a routine is taking shape." } } },
+    { "id": "count.25", "category": "count", "rule": { "type": "session_count", "min": 25 }, "article_unlock": "cold-and-sport",
+      "i18n": {
+        "de": { "title": "25 Eisbäder", "description": "25 Eisbäder dokumentiert.", "message": "Die Kälte ist ein fester Teil deines Alltags geworden." },
+        "en": { "title": "25 ice baths", "description": "25 ice baths logged.", "message": "The cold has become part of your everyday life." } } },
+    { "id": "count.50", "category": "count", "rule": { "type": "session_count", "min": 50 }, "article_unlock": "what-research-does-not-know",
+      "i18n": {
+        "de": { "title": "50 Eisbäder", "description": "50 Eisbäder dokumentiert.", "message": "Fünfzig Mal Ruhe in der Kälte gefunden." },
+        "en": { "title": "50 ice baths", "description": "50 ice baths logged.", "message": "Fifty times you found calm in the cold." } } },
+    { "id": "count.100", "category": "count", "rule": { "type": "session_count", "min": 100 },
+      "i18n": {
+        "de": { "title": "100 Eisbäder", "description": "100 Eisbäder dokumentiert.", "message": "Hundert Eisbäder – Beständigkeit, die man spürt." },
+        "en": { "title": "100 ice baths", "description": "100 ice baths logged.", "message": "One hundred ice baths – consistency you can feel." } } },
+    { "id": "count.250", "category": "count", "rule": { "type": "session_count", "min": 250 },
+      "i18n": {
+        "de": { "title": "250 Eisbäder", "description": "250 Eisbäder dokumentiert.", "message": "Eine Routine, die trägt." },
+        "en": { "title": "250 ice baths", "description": "250 ice baths logged.", "message": "A routine that carries you." } } },
+    { "id": "count.500", "category": "count", "rule": { "type": "session_count", "min": 500 },
+      "i18n": {
+        "de": { "title": "500 Eisbäder", "description": "500 Eisbäder dokumentiert.", "message": "Fünfhundert Mal. Ein Teil von dir." },
+        "en": { "title": "500 ice baths", "description": "500 ice baths logged.", "message": "Five hundred times. A part of who you are." } } },
+
+    { "id": "routine.first_double_week", "category": "routine", "rule": { "type": "consecutive_active_weeks", "min_weeks": 1, "sessions_per_week": 2 },
+      "i18n": {
+        "de": { "title": "Doppelwoche", "description": "Zwei Eisbäder in einer Woche.", "message": "Regelmässigkeit beginnt mit der zweiten Wiederholung." },
+        "en": { "title": "Double week", "description": "Two ice baths in one week.", "message": "Consistency begins with the second repetition." } } },
+    { "id": "routine.weeks_3", "category": "routine", "rule": { "type": "consecutive_active_weeks", "min_weeks": 3 }, "article_unlock": "nervous-system-and-mood",
+      "i18n": {
+        "de": { "title": "3 Wochen in Folge", "description": "Drei Wochen in Folge mindestens ein Eisbad.", "message": "Drei Wochen dabei – das ist der Anfang einer Gewohnheit." },
+        "en": { "title": "3 weeks in a row", "description": "At least one ice bath three weeks in a row.", "message": "Three weeks in – the beginning of a habit." } } },
+    { "id": "routine.weeks_4", "category": "routine", "rule": { "type": "consecutive_active_weeks", "min_weeks": 4 },
+      "i18n": {
+        "de": { "title": "4 Wochen dabei", "description": "Vier Wochen in Folge mindestens ein Eisbad.", "message": "Ein ganzer Monat Routine. Schön, dass du dranbleibst." },
+        "en": { "title": "4 weeks strong", "description": "At least one ice bath four weeks in a row.", "message": "A whole month of routine. Great that you keep going." } } },
+    { "id": "routine.weeks_8", "category": "routine", "rule": { "type": "consecutive_active_weeks", "min_weeks": 8 },
+      "i18n": {
+        "de": { "title": "8 Wochen in Folge", "description": "Acht Wochen in Folge mindestens ein Eisbad.", "message": "Zwei Monate Beständigkeit." },
+        "en": { "title": "8 weeks in a row", "description": "At least one ice bath eight weeks in a row.", "message": "Two months of consistency." } } },
+    { "id": "routine.weeks_15", "category": "routine", "rule": { "type": "consecutive_active_weeks", "min_weeks": 15 },
+      "i18n": {
+        "de": { "title": "100 Tage Routine", "description": "15 Wochen in Folge mindestens ein Eisbad.", "message": "Rund hundert Tage – deine Routine steht." },
+        "en": { "title": "100 days of routine", "description": "At least one ice bath 15 weeks in a row.", "message": "About a hundred days – your routine stands." } } },
+    { "id": "routine.weeks_26", "category": "routine", "rule": { "type": "consecutive_active_weeks", "min_weeks": 26 },
+      "i18n": {
+        "de": { "title": "Ein halbes Jahr", "description": "26 Wochen in Folge mindestens ein Eisbad.", "message": "Ein halbes Jahr, durch die Jahreszeiten hindurch." },
+        "en": { "title": "Half a year", "description": "At least one ice bath 26 weeks in a row.", "message": "Half a year, through the seasons." } } },
+    { "id": "routine.weeks_52", "category": "routine", "rule": { "type": "consecutive_active_weeks", "min_weeks": 52 },
+      "i18n": {
+        "de": { "title": "Ein ganzes Jahr", "description": "52 Wochen in Folge mindestens ein Eisbad.", "message": "Ein Jahr Eisbaden. Eindrücklich." },
+        "en": { "title": "A whole year", "description": "At least one ice bath 52 weeks in a row.", "message": "A year of ice bathing. Remarkable." } } },
+    { "id": "routine.month_10", "category": "routine", "rule": { "type": "sessions_in_calendar_month", "min": 10 },
+      "i18n": {
+        "de": { "title": "10 in einem Monat", "description": "Zehn Eisbäder in einem Kalendermonat.", "message": "Ein intensiver Monat – gönn dir auch Pausen." },
+        "en": { "title": "10 in one month", "description": "Ten ice baths in one calendar month.", "message": "An intense month – remember to rest too." } } },
+    { "id": "routine.comeback", "category": "routine", "rule": { "type": "return_after_break", "min_break_weeks": 3 },
+      "i18n": {
+        "de": { "title": "Willkommen zurück", "description": "Nach mindestens drei Wochen Pause wieder eingestiegen.", "message": "Pausen gehören dazu. Schön, dass du wieder da bist." },
+        "en": { "title": "Welcome back", "description": "Returned after a break of at least three weeks.", "message": "Breaks are part of it. Good to have you back." } } },
+
+    { "id": "duration.10m", "category": "duration", "rule": { "type": "total_duration", "min_seconds": 600 },
+      "i18n": {
+        "de": { "title": "10 Minuten gesamt", "description": "Insgesamt zehn Minuten im Eisbad.", "message": "Jede Minute zählt – gesammelt, nicht am Stück." },
+        "en": { "title": "10 minutes total", "description": "Ten minutes in the ice bath in total.", "message": "Every minute counts – collected, not in one go." } } },
+    { "id": "duration.30m", "category": "duration", "rule": { "type": "total_duration", "min_seconds": 1800 },
+      "i18n": {
+        "de": { "title": "30 Minuten gesamt", "description": "Insgesamt 30 Minuten im Eisbad.", "message": "Eine halbe Stunde Kälte, Bad für Bad gesammelt." },
+        "en": { "title": "30 minutes total", "description": "30 minutes in the ice bath in total.", "message": "Half an hour of cold, collected bath by bath." } } },
+    { "id": "duration.1h", "category": "duration", "rule": { "type": "total_duration", "min_seconds": 3600 },
+      "i18n": {
+        "de": { "title": "1 Stunde gesamt", "description": "Insgesamt eine Stunde im Eisbad.", "message": "Eine Stunde – Minute für Minute." },
+        "en": { "title": "1 hour total", "description": "One hour in the ice bath in total.", "message": "One hour – minute by minute." } } },
+    { "id": "duration.5h", "category": "duration", "rule": { "type": "total_duration", "min_seconds": 18000 },
+      "i18n": {
+        "de": { "title": "5 Stunden gesamt", "description": "Insgesamt fünf Stunden im Eisbad.", "message": "Fünf Stunden gesammelte Ruhe." },
+        "en": { "title": "5 hours total", "description": "Five hours in the ice bath in total.", "message": "Five hours of collected calm." } } },
+    { "id": "duration.10h", "category": "duration", "rule": { "type": "total_duration", "min_seconds": 36000 },
+      "i18n": {
+        "de": { "title": "10 Stunden gesamt", "description": "Insgesamt zehn Stunden im Eisbad.", "message": "Zehn Stunden – eine echte Gewohnheit." },
+        "en": { "title": "10 hours total", "description": "Ten hours in the ice bath in total.", "message": "Ten hours – a true habit." } } },
+    { "id": "duration.25h", "category": "duration", "rule": { "type": "total_duration", "min_seconds": 90000 },
+      "i18n": {
+        "de": { "title": "25 Stunden gesamt", "description": "Insgesamt 25 Stunden im Eisbad.", "message": "Mehr als ein ganzer Tag in der Kälte, über viele Bäder verteilt." },
+        "en": { "title": "25 hours total", "description": "25 hours in the ice bath in total.", "message": "More than a full day in the cold, spread over many baths." } } },
+
+    { "id": "experience.below_15c", "category": "experience", "rule": { "type": "first_session_with_temp", "max_c": 15.0 },
+      "i18n": {
+        "de": { "title": "Unter 15 °C", "description": "Erstes Bad unter 15 °C.", "message": "Ein guter Einstieg. Hör auf deinen Körper." },
+        "en": { "title": "Below 15 °C", "description": "First bath below 15 °C.", "message": "A good start. Listen to your body." } } },
+    { "id": "experience.below_10c", "category": "experience", "rule": { "type": "first_session_with_temp", "max_c": 10.0 },
+      "i18n": {
+        "de": { "title": "Unter 10 °C", "description": "Erstes Bad unter 10 °C.", "message": "Kälter heisst nicht länger. Kurz und ruhig ist genug." },
+        "en": { "title": "Below 10 °C", "description": "First bath below 10 °C.", "message": "Colder doesn't mean longer. Short and calm is enough." } } },
+    { "id": "experience.below_5c", "category": "experience", "rule": { "type": "first_session_with_temp", "max_c": 5.0 }, "requires": ["knowledge.safety_basics"],
+      "i18n": {
+        "de": { "title": "Unter 5 °C", "description": "Erstes Bad unter 5 °C.", "message": "Gut vorbereitet ist halb gewonnen. Hör weiterhin auf deinen Körper." },
+        "en": { "title": "Below 5 °C", "description": "First bath below 5 °C.", "message": "Preparation is half the battle. Keep listening to your body." } } },
+    { "id": "experience.at_2c", "category": "experience", "rule": { "type": "first_session_with_temp", "max_c": 2.0 }, "requires": ["knowledge.safety_basics"],
+      "i18n": {
+        "de": { "title": "Bei 2 °C", "description": "Erstes Bad bei 2 °C oder kälter.", "message": "Sehr kaltes Wasser verlangt Respekt. Nie allein, immer kurz." },
+        "en": { "title": "At 2 °C", "description": "First bath at 2 °C or colder.", "message": "Very cold water demands respect. Never alone, always short." } } },
+
+    { "id": "mindfulness.reflect_10", "category": "mindfulness", "rule": { "type": "sessions_with_reflection", "min": 10 },
+      "i18n": {
+        "de": { "title": "Achtsam dabei", "description": "Zehn Sessions mit Empfinden oder Notiz festgehalten.", "message": "Wer hinspürt, lernt sich kennen." },
+        "en": { "title": "Mindful", "description": "Recorded how you felt or a note for ten sessions.", "message": "Paying attention is how you get to know yourself." } } }
+  ]
+}

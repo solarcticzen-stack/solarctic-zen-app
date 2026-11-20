@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "exercises": [
+    { "id": "squats", "animation": "squat", "slip_risk": false,
+      "i18n": {
+        "de": { "title": "10 Kniebeugen", "how": "Füsse hüftbreit, langsam in die Hocke und wieder hoch. Rücken gerade, Tempo ruhig." },
+        "en": { "title": "10 squats", "how": "Feet hip-width apart, slowly lower and rise again. Keep your back straight and the pace calm." } } },
+    { "id": "jumping_jacks", "animation": "jumping_jack", "slip_risk": true,
+      "i18n": {
+        "de": { "title": "10 Hampelmänner", "how": "Beine und Arme gleichzeitig öffnen und schliessen, locker in den Knien landen." },
+        "en": { "title": "10 jumping jacks", "how": "Open and close arms and legs together, landing softly with bent knees." } } },
+    { "id": "wall_pushups", "animation": "wall_pushup", "slip_risk": false,
+      "i18n": {
+        "de": { "title": "8 Liegestütze an der Wand", "how": "Hände schulterbreit an die Wand, Körper gerade, Brust langsam zur Wand und zurück." },
+        "en": { "title": "8 wall push-ups", "how": "Hands shoulder-width on the wall, body straight, slowly bring your chest to the wall and back." } } },
+    { "id": "pushups", "animation": "pushup", "slip_risk": true,
+      "i18n": {
+        "de": { "title": "8 Liegestütze", "how": "Auf trockenem Untergrund. Körper gerade halten; auf den Knien ist völlig in Ordnung." },
+        "en": { "title": "8 push-ups", "how": "On dry ground. Keep your body straight; doing them on your knees is perfectly fine." } } },
+    { "id": "arm_circles", "animation": "arm_circles", "slip_risk": false,
+      "i18n": {
+        "de": { "title": "20 Sekunden Armkreisen", "how": "Arme seitlich ausstrecken und grosse, lockere Kreise machen. Nach 10 Sekunden Richtung wechseln." },
+        "en": { "title": "20 seconds arm circles", "how": "Stretch your arms out to the sides and make big, loose circles. Switch direction after 10 seconds." } } },
+    { "id": "march", "animation": "march", "slip_risk": false,
+      "i18n": {
+        "de": { "title": "30 Sekunden Marschieren an Ort", "how": "Knie abwechselnd anheben, Arme mitschwingen lassen." },
+        "en": { "title": "30 seconds marching in place", "how": "Lift your knees alternately and let your arms swing along." } } },
+    { "id": "lunges", "animation": "lunge", "slip_risk": true,
+      "i18n": {
+        "de": { "title": "10 Ausfallschritte", "how": "Fünf pro Seite, langsam und kontrolliert. Bei unsicherem Stand an der Wand abstützen." },
+        "en": { "title": "10 lunges", "how": "Five per side, slow and controlled. Lean on a wall if you feel unsteady." } } },
+    { "id": "shoulder_rolls", "animation": "shoulder_rolls", "slip_risk": false,
+      "i18n": {
+        "de": { "title": "20 Sekunden Schulterkreisen", "how": "Schultern langsam nach oben, hinten und unten kreisen. Ruhig weiteratmen." },
+        "en": { "title": "20 seconds shoulder rolls", "how": "Slowly roll your shoulders up, back and down. Keep breathing calmly." } } }
+  ]
+}
